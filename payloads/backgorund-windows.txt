@@ -1,6 +1,6 @@
-#include "DigiKeyboard.h"
-
-#include <stdlib.h>
+// this is a prank specialized for windows
+// this would make a printscreen from desktop and make it the background
+// and then it would hide the icons!
 
 #define KEY_PrintScreen     70
 #define KEY_Menu     118
@@ -48,73 +48,4 @@ DigiKeyboard.update();
   DigiKeyboard.delay(90000);
   digitalWrite(1, LOW);
   DigiKeyboard.delay(5000);
-}
-//char* make_path(){
-//  int name=random(1000, 10000);
-//  char path[1000]={"%userprofile%\\",48+random(1, 10),48+random(1, 10)};
-//  int index=14;
-//    t/=10;
-//  }
-//  return path;
-//}
-
-void test() {
-  DigiKeyboard.delay(500);
-  DigiKeyboard.println("Hello its me again");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.println("Sorry to bother you!");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-}
-void windows_powerShell() {
-
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
-
-  DigiKeyboard.delay(500);
-  DigiKeyboard.println("powershell");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-}
-void ubuntu_terminal() {
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_T , MOD_CONTROL_LEFT | MOD_ALT_LEFT);
-  DigiKeyboard.delay(500);
-}
-
-void macOs_terminal() {
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_GUI_LEFT);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.print("terminal");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
-}
-
-void setup()
-{
-//  Serial.println(random(1,10));
-//  srand(time(NULL));
-//  int r = rand() % 20;
-  test();
-  Serial.begin(9600);
-  randomSeed(analogRead(0));
-  DigiKeyboard.println(random(1,10));
-
-  //  windows_powerShell();
-  //  ubuntu_terminal();
-  //  macOs_terminal();
-
-}
-void loop()
-{
-  //  test();
-  background_prank();
-  /* 
-   */
 }
