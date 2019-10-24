@@ -40,23 +40,17 @@ void macOs_terminal() {
 
 void setup()
 {
-//  Serial.println(random(1,10));
-//  srand(time(NULL));
-//  int r = rand() % 20;
-  test();
   Serial.begin(9600);
   randomSeed(analogRead(0));
-  DigiKeyboard.println(random(1,10));
 
+  test();
   //  windows_powerShell();
   //  ubuntu_terminal();
   //  macOs_terminal();
-
+  
 }
 void loop()
 {
-  //  test();
-  background_prank();
-  /* 
+  /*  
    */
 }

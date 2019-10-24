@@ -1,0 +1,11 @@
+
+//this prank is specialized for ubuntu terminal
+
+void fear(){
+  DigiKeyboard.println("cat >> .zshrc");
+  DigiKeyboard.println("echo fear from me my child for i am superior to you");
+  DigiKeyboard.println("echo ha ha ha ha");
+  DigiKeyboard.sendKeyStroke(KEY_C,MOD_CONTROL_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_F4,MOD_ALT_LEFT);
+}
+
